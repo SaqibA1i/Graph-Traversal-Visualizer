@@ -1,0 +1,21 @@
+$main-accent-color: #af1dfd;
+$main2-accent-color: #8262ff;
+$main-light-accent-color: #c964ff;
+$yellow: #f2b200;
+$yellow-gradient: linear-gradient(180deg, #f2cf00, #f2b200);
+$text-white: rgba(255, 255, 255, 0.897);
+$text-black: #333;
+$blue-border: rgb(0, 255, 170);
+$searching: rgba(0, 204, 255, 0.527);
+$discovered: rgba(0, 89, 255, 0.644);
+$green: rgba(0, 255, 106, 0.527);
+$yellow-green: rgba(200, 255, 0, 0.39);
+$blocker-border: rgba(51, 51, 51, 0.699);
+$blocker: rgba(51, 51, 51, 0.849);
+
+$main-accent-gradient: linear-gradient(
+  90deg,
+  $main-accent-color 0%,
+  rgba(175, 29, 253, 1) 68%,
+  $main2-accent-color 100%
+);

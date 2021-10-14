@@ -1,0 +1,105 @@
+h3 {
+  text-align: center;
+}
+@keyframes zoom-in-out {
+  0% {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+  50% {
+    margin: 1px;
+    border: 3px solid $blue-border;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  75% {
+    margin: 1px;
+    border: 3px solid $blue-border;
+    width: 18px;
+    height: 18px;
+    background-color: $yellow-green;
+  }
+  100% {
+    width: 20px;
+    height: 20px;
+    background-color: $searching;
+  }
+}
+@keyframes zoom-in-out2 {
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    margin: 1px;
+    border: 3px solid $blocker-border;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  100% {
+    width: 20px;
+    height: 20px;
+  }
+}
+@keyframes zoom-in-out3 {
+  0% {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    margin: 1px;
+    border: 3px solid $searching;
+    width: 18px;
+    height: 18px;
+    border-radius: 20%;
+  }
+  100% {
+    width: 20px;
+    height: 20px;
+  }
+}
+.grid-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .grid-box {
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    font-size: 8px;
+    border: 1px solid rgba(57, 0, 90, 0.219);
+  }
+}
+.hover {
+  background-color: aqua;
+}
+.blocker {
+  @extend .grid-box;
+  background-color: $text-black;
+  color: $text-white;
+  animation: zoom-in-out2 500ms ease-out;
+}
+.gray {
+  @extend .grid-box;
+  background-color: $searching;
+  animation: zoom-in-out 1000ms ease-out;
+}
+.black {
+  @extend .grid-box;
+  background-color: $discovered;
+  animation: zoom-in-out3 2000ms ease-in-out;
+}
+.path-found {
+  @extend .grid-box;
+  background-color: $yellow;
+  animation: zoom-in-out 500ms ease-in-out;
+}

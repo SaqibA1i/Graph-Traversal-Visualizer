@@ -1,0 +1,12 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin hoverAnim($color) {
+  transition: background-color 100ms ease-in-out;
+  &:hover {
+    background: $color;
+  }
+}

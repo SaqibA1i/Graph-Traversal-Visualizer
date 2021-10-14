@@ -1,0 +1,31 @@
+.button-bar {
+  @include flexCenter(row);
+  margin: 0 auto;
+  background-color: $main-light-accent-color;
+  width: 400px;
+  border-radius: 0 0 40px 40px;
+  .button {
+    @include flexCenter(row);
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $text-white;
+    @include hoverAnim(white);
+  }
+  .button-disabled {
+    @include flexCenter(row);
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #333;
+    cursor: default;
+  }
+}
