@@ -5,7 +5,7 @@ export type graph_t = {
   algorithm: string;
   setAlgorithm: React.Dispatch<React.SetStateAction<string>>;
   message?: string;
-  setMessage?: (message: String) => void;
+  setMessage?: (message: string) => void;
   inProg: Boolean;
   setInProg?: (inProg: boolean) => void;
   start?: () => void;

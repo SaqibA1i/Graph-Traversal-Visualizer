@@ -5,8 +5,12 @@ import {
   StarFill,
   SquareFill,
 } from "react-bootstrap-icons";
+import { useAlg } from "../context/GraphContext";
+import { useEffect } from "react";
 
 function Header() {
+  const { message } = useAlg();
+  useEffect(() => {}, [message]);
   return (
     <>
       <div className="header-container">
@@ -29,6 +33,7 @@ function Header() {
           <SquareFill size={20} color={"#333"} />
           Blocked Nodes
         </p>
+        {/* <h5>{message}</h5> */}
       </div>
     </>
   );

@@ -17,7 +17,9 @@ function Body() {
   const [matrix, setMatrix] = useState<Graph>(new Graph());
   const [start, setStart] = useState<entry_position>({ row: 0, coloumn: 0 });
   const [dest, setDest] = useState<entry_position>({ row: 0, coloumn: 0 });
-
+  const [message, setMessage] = useState<string>(
+    "Welcome to the graph traversal Visualizer!"
+  );
   const setGraphHelper = async (graph?: Graph) => {
     if (graph != undefined) {
       let n_g: Graph = new Graph([...graph.matrix]);
@@ -35,7 +37,7 @@ function Body() {
       setinProg(false);
     } else if (algorithm === algorithmList[1].name) {
       setinProg(true);
-      DFS(matrix, start, dest, setGraphHelper);
+      await DFS(matrix, start, dest, setGraphHelper);
       setinProg(false);
     } else {
       alert("Not Valid Algorithm");
@@ -63,6 +65,8 @@ function Body() {
           inProg: inProg,
           start: start_alg,
           setGraph: setGraphHelper,
+          message: message,
+          setMessage: setMessage,
         }}
       >
         <Header />
