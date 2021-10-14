@@ -48,16 +48,15 @@ h3 {
 }
 @keyframes zoom-in-out3 {
   0% {
-    border-radius: 50%;
     width: 20px;
     height: 20px;
+    background-color: $searching;
   }
   50% {
     margin: 1px;
     border: 3px solid $searching;
     width: 18px;
     height: 18px;
-    border-radius: 20%;
   }
   100% {
     width: 20px;
@@ -92,15 +91,15 @@ h3 {
 .gray {
   @extend .grid-box;
   background-color: $searching;
-  animation: zoom-in-out 1500ms ease-out;
+  animation: zoom-in-out 1000ms ease-out;
 }
 .black {
   @extend .grid-box;
   background-color: $discovered;
-  animation: zoom-in-out3 2000ms ease-in-out;
+  animation: zoom-in-out3 500ms ease-in-out;
 }
 .path-found {
   @extend .grid-box;
   background-color: $yellow;
-  animation: zoom-in-out 500ms ease-in-out;
+  animation: zoom-in-out 200ms ease-in-out;
 }
