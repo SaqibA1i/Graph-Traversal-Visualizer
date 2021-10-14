@@ -3,8 +3,9 @@ h3 {
 }
 @keyframes zoom-in-out {
   0% {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
     border-radius: 50%;
     background-color: $green;
   }
@@ -91,7 +92,7 @@ h3 {
 .gray {
   @extend .grid-box;
   background-color: $searching;
-  animation: zoom-in-out 1000ms ease-out;
+  animation: zoom-in-out 1500ms ease-out;
 }
 .black {
   @extend .grid-box;
