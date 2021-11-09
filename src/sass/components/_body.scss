@@ -86,12 +86,12 @@ h3 {
   @extend .grid-box;
   background-color: $text-black;
   color: $text-white;
-  animation: zoom-in-out2 500ms ease-out;
+  animation: zoom-in-out2 200ms ease-out;
 }
 .gray {
   @extend .grid-box;
   background-color: $searching;
-  animation: zoom-in-out 1000ms ease-out;
+  animation: zoom-in-out 500ms ease-out;
 }
 .black {
   @extend .grid-box;
