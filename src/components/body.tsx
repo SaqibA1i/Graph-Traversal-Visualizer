@@ -24,7 +24,7 @@ function Body() {
     if (graph != undefined) {
       let n_g: Graph = new Graph([...graph.matrix]);
       setMatrix(n_g);
-      await delay(1);
+      await delay(0.25);
     } else {
       setMatrix(new Graph());
     }
